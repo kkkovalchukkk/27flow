@@ -1,0 +1,68 @@
+.tab-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  &__item {
+    position: relative;
+    &--active {
+      margin-bottom: 2px;
+      .tab-list__item-btn {
+        color: $black;
+        leading-trim: both;
+        text-edge: cap;
+        font-family: $mainFont;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        &::after {
+          max-width: 100%;
+          background-color: $black;
+        }
+        &:hover::after {
+          background-color: $black;
+          width: 120%;
+          max-width: 120%;
+        }
+      }
+    }
+  }
+
+  &__item-btn {
+    color: $d-grey;
+    padding: 0;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: $mainFont;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    cursor: pointer;
+    transition: $defaultTransitionTime;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      max-width: 0%;
+      bottom: -8px;
+      left: 0;
+      height: 4px;
+      transition: $defaultTransitionTime;
+      background-color: transparent;
+    }
+    &:hover::after {
+      max-width: 100%;
+      background-color: rgba($color: $d-grey, $alpha: 0.5);
+    }
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+  &--col {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+  }
+}
