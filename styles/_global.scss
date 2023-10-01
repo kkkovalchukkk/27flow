@@ -1,6 +1,9 @@
 body {
   font-family: $mainFont;
   min-width: 320px;
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 
 section {

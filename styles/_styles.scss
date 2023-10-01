@@ -514,10 +514,29 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: start;
-    gap: 15px;
+    gap: 27px;
     &--last {
       margin-bottom: 48px;
     }
+  }
+  &__input-wrapper {
+    width: 100%;
+    position: relative;
+  }
+  &__error {
+    position: absolute;
+    left: 0;
+    top: calc(100% + 6px);
+    margin-left: 24px;
+    color: $red;
+    font-family: $mainFont;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    opacity: 0;
+    visibility: hidden;
+    transition: $defaultTransitionTime;
   }
 
   &__heading {
@@ -545,13 +564,19 @@
     border-radius: 25.5px;
     border: 0.7px solid $black;
     font-family: $mainFont;
-
     color: $black;
     font-size: 16.5px;
     font-style: normal;
     font-weight: 700;
     line-height: 110%; /* 18.15px */
     transition: $defaultTransitionTime;
+    &.error {
+      border: 1px solid $red;
+      & + .form__error {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
     &:focus {
       outline: none;
       border: 0.7px solid $blue;

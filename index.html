@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header id="header" class="header">
         <div class="wrapper header__wrapper">
             <a href="#" class="header__logo-link">
                 <div class="logo header__logo">
@@ -22,7 +22,7 @@
                 </div>
                 <h1 class="header__company-name">27flows</h1>
             </a>
-            <a href="#" class="main-link header__main-link">
+            <a href="#" id="togglePopup" class="main-link header__main-link">
                 Связаться с нами
                 <div class="main-link__icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -36,11 +36,11 @@
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-list-item">
-                        <a href="#" class="header__nav-link">Проекты</a>
+                        <a href="#projects" class="header__nav-link smoothScrollLink">Проекты</a>
                     </li>
                     <li class="header__nav-list-item header__nav-list-item--submenu">
                         <div class="header__nav-list-item-top">
-                            <a href="#" class="header__nav-link">Услуги</a>
+                            <a href="#offers" class="header__nav-link smoothScrollLink">Услуги</a>
                             <div class="header__nav-list-item-chevron">
                                 <svg width="8" height="6" viewBox="0 0 8 6" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -85,7 +85,7 @@
                         <a href="#" class="header__nav-link">О нас</a>
                     </li>
                     <li class="header__nav-list-item">
-                        <a href="#" class="header__nav-link">Контакты</a>
+                        <a href="#request" class="header__nav-link  smoothScrollLink">Контакты</a>
                     </li>
                     <li class="header__nav-list-item header__nav-list-item--submenu">
                         <div class="header__nav-list-item-top">
@@ -134,11 +134,11 @@
                 </p>
             </div>
         </section>
-        <section class="project-section tab-section">
+        <section id="projects" class="project-section tab-section">
             <div class="wrapper project-section__wrapper">
                 <div class="hgroup project-section__hgroup">
                     <h2 class="subheading project-section__heading">Наши проекты</h2>
-                    <a href="#" class="main-link main-link--blue project-section__main-link">
+                    <a href="#" id="togglePopup" class="main-link main-link--blue project-section__main-link">
                         Связаться с нами
                         <div class="main-link__icon">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -724,7 +724,7 @@
                 </div>
             </div>
         </section>
-        <section class="player-section">
+        <!-- <section class="player-section">
             <div class="player player-section__player">
                 <button class="player__toggle-btn hidden" type="button">
                     <svg width="243" height="243" viewBox="0 0 243 243" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -734,12 +734,12 @@
                 </button>
                 <video autoplay muted src="./assets/video/test.mp4" class="player__video"></video>
             </div>
-        </section>
-        <section class="offers-section">
+        </section> -->
+        <section class="offers-section" id="offers">
             <div class="wrapper offers-section__wrapper">
                 <div class="hgroup offers-section__hgroup">
                     <h2 class="subheading offers-section__heading">услуги</h2>
-                    <a href="#" class="main-link main-link--blue offers-section__main-link">
+                    <a href="#" id="togglePopup" class="main-link main-link--blue offers-section__main-link">
                         Связаться с нами
                         <div class="main-link__icon">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -993,7 +993,7 @@
                 </div>
             </div>
         </section>
-        <section class="request-section">
+        <section class="request-section" id="request">
             <div class="wrapper request-section__wrapper">
                 <div class="request-section__content">
                     <div class="request-section__col">
@@ -1042,10 +1042,25 @@
                                 Ваши контакты
                             </h5>
                             <div class="form__row form__row--split">
-                                <input type="text" placeholder="Имя" class="form__input">
-                                <input type="tel" placeholder="+7" class="form__input">
+                                <div class="form__input-wrapper">
+                                    <input name="name" type="text" placeholder="Имя" class="form__input">
+                                    <span class="form__error">
+                                        Введите корректные данные
+                                    </span>
+                                </div>
+                                <div class="form__input-wrapper">
+                                    <input type="tel" placeholder="+7" class="form__input">
+                                    <span class="form__error">
+                                        Введите корректные данные
+                                    </span>
+                                </div>
                             </div>
-                            <input type="email" placeholder="Почта" class="form__input">
+                            <div class="form__input-wrapper">
+                                <input type="email" placeholder="Почта" class="form__input">
+                                <span class="form__error">
+                                    Введите корректные данные
+                                </span>
+                            </div>
                         </div>
                         <div class="form__group form__group--last">
                             <h5 class="form__heading">
@@ -1106,7 +1121,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="wrapper footer__wrapper">
             <div class="footer__col">
                 <a href="#" class="footer__logo-link">
@@ -1125,14 +1140,14 @@
                     <a href="#" class="footer__nav-link">
                         О нас
                     </a>
-                    <a href="#" class="footer__nav-link">
+                    <a href="#projects" class="footer__nav-link smoothScrollLink">
                         Проекты
                     </a>
-                    <a href="#" class="footer__nav-link">
+                    <a href="#contacts" class="footer__nav-link">
                         Контакты
                     </a>
                 </nav>
-                <div href="#header" class="footer__link">
+                <div href="#header" class="footer__link smoothScrollLink">
                     наверх
                     <div class="footer__link-icon">
                         <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1183,9 +1198,61 @@
             </div>
         </div>
     </footer>
+    <div class="overlay">
+        <button id="closeOverlay" type="button" class="overlay__close-btn">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30 10L10 30" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M10 10L30 30" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+        <div class="popup overlay__popup">
+            <h2 class="popup__heading">
+                Оставить <span>заявку</span> <br>
+                для обсуждения проекта
+            </h2>
+            <form class="form popup__form">
+                <div class="form__input-wrapper">
+                    <input type="text" name="name" placeholder="Имя" class="form__input">
+                    <span class="form__error">
+                        Введите корректные данные
+                    </span>
+                </div>
+                <div class="form__input-wrapper">
+                    <input type="tel" name="tel" placeholder="+7" class="form__input">
+                    <span class="form__error">
+                        Введите корректные данные
+                    </span>
+                </div>
+                <div class="form__input-wrapper">
+                    <input type="email" name="email" placeholder="Почта" class="form__input">
+                    <span class="form__error">
+                        Введите корректные данные
+                    </span>
+                </div>
+                <button type="submit" class="btn btn--icon form__btn">
+                    <span class="btn__label">
+                        Оставить заявку
+                    </span>
+                    <div class="btn__icon">
+                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1H16V16" stroke="white" stroke-width="2" />
+                            <path d="M16 1L1.5 15.5" stroke="white" stroke-width="2" />
+                        </svg>
+                    </div>
+                </button>
+                <p class="form__subtext">
+                    Нажимая на кнопку, соглашаюсь на обработку персональных данных
+                </p>
+            </form>
+        </div>
+    </div>
+    <script src="./scripts/iMask.js"></script>
     <script src="./scripts/submenu.js"></script>
     <script src="./scripts/tabs.js"></script>
     <script src="./scripts/player.js"></script>
+    <script src="./scripts/popup.js"></script>
+    <script src="./scripts/smoothScroll.js"></script>
+    <script src="./scripts/validateForm.js"></script>
 </body>
 
 </html>

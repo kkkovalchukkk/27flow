@@ -1,0 +1,29 @@
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow-y: auto;
+  background: rgba($color: $black, $alpha: 0.8);
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  transition: $defaultTransitionTime;
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    .popup {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0%);
+    }
+  }
+  &__close-btn {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+  }
+}
