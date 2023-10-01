@@ -3,10 +3,10 @@
   leading-trim: both;
   text-edge: cap;
   font-family: $mainFont;
-  font-size: 38px;
+  font-size: 28.5px;
   font-style: normal;
   font-weight: 700;
-  line-height: 100%;
-  letter-spacing: -0.76px;
+  line-height: 100%; /* 28.5px */
+  letter-spacing: -0.57px;
   text-transform: uppercase;
 }

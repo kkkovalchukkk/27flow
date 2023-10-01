@@ -10,7 +10,7 @@
     margin-right: 253px;
     display: flex;
     align-items: center;
-    gap: 19px;
+    gap: 17px;
   }
   &__company-name {
     position: relative;
@@ -18,11 +18,11 @@
     leading-trim: both;
     text-edge: cap;
     font-family: $mainFont;
-    font-size: 20px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
-    line-height: 100%;
-    letter-spacing: -0.4px;
+    line-height: 100%; /* 15px */
+    letter-spacing: -0.3px;
     // @include blockFade($blue);
     transition: $defaultTransitionTime cubic-bezier(0.62, 0.21, 0.905, 0.36);
     overflow: hidden;
@@ -73,7 +73,7 @@
   &__nav-list {
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 24px;
   }
 
   &__nav-list-item {
@@ -85,14 +85,23 @@
     leading-trim: both;
     text-edge: cap;
     font-family: $mainFont;
-    font-size: 20px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
-    line-height: 100%; /* 20px */
-    letter-spacing: -0.4px;
+    line-height: 100%; /* 15px */
+    letter-spacing: -0.3px;
   }
 
   &__nav-list-item-chevron {
+    width: 6px;
+    height: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      width: 6px;
+      height: 6px;
+    }
     transition: $defaultTransitionTime;
   }
 
@@ -144,10 +153,11 @@
     leading-trim: both;
     text-edge: cap;
     font-family: $mainFont;
-    font-size: 16px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
-    line-height: 100%;
+    line-height: 100%; /* 15px */
+    letter-spacing: -0.3px;
     transition: $defaultTransitionTime cubic-bezier(0.075, 0.82, 0.165, 1);
     &:hover {
       background-color: $blue;
@@ -156,6 +166,16 @@
   }
 
   &__nav-list-item-top-value {
+    color: $black;
+    text-align: right;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: $mainFont;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 15px */
+    letter-spacing: -0.3px;
   }
 
   &__menu {
@@ -165,6 +185,15 @@
     transition: $defaultTransitionTime cubic-bezier(0.62, 0.21, 0.905, 0.36);
     overflow: hidden;
     padding: 4px;
+    color: $black;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: $mainFont;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 15px */
+    letter-spacing: -0.3px;
     &::after {
       content: '';
       position: absolute;
