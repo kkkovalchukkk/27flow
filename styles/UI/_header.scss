@@ -1,13 +1,13 @@
 .header {
   width: 100%;
-  padding-top: 35px;
+  padding-top: 24.25px;
   &__wrapper {
     flex-direction: row;
     align-items: flex-end;
   }
 
   &__logo-link {
-    margin-right: 253px;
+    margin-right: 194px;
     display: flex;
     align-items: center;
     gap: 17px;
@@ -62,12 +62,12 @@
 
   &__main-link {
     margin-right: auto;
-    margin-bottom: 11px;
+    margin-bottom: 7px;
   }
 
   &__nav {
-    margin-right: 36px;
-    margin-bottom: 18px;
+    margin-right: 26px;
+    margin-bottom: 12px;
   }
 
   &__nav-list {
@@ -180,10 +180,13 @@
 
   &__menu {
     position: relative;
-    margin-bottom: 4px;
+    margin-bottom: 9px;
     cursor: pointer;
     transition: $defaultTransitionTime cubic-bezier(0.62, 0.21, 0.905, 0.36);
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 10px;
     padding: 4px;
     color: $black;
     leading-trim: both;
