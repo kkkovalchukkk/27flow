@@ -1225,7 +1225,7 @@ section {
   grid-template-columns: repeat(3, 1fr);
 }
 .table__cell {
-  width: 100vw;
+  width: 100%;
   max-width: 312.75px;
   height: 305px;
   display: flex;
