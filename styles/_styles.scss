@@ -51,6 +51,7 @@
   &__sidebar {
     position: sticky;
     left: 0;
+    height: min-content;
     top: 0;
     display: flex;
     flex-direction: column;
@@ -60,7 +61,6 @@
     padding: 28px;
     padding-left: 0;
     z-index: 5;
-    border-right: 1.2px solid $lt-grey;
   }
   &__btn {
     width: 100%;
@@ -69,8 +69,14 @@
   &__mobile-btn {
     display: none;
   }
+  .grid-list {
+    border-left: 1.2px solid $lt-grey;
+  }
 
   @media (max-width: 1280px) {
+    .grid-list {
+      border-left: none;
+    }
     &__sidebar {
       border: none;
       border-bottom: 1.2px solid $lt-grey;
@@ -406,6 +412,10 @@
 
   &__sidebar {
     @extend .project-section__sidebar;
+    height: fit-content;
+    position: sticky;
+    left: 0;
+    top: 0;
     padding-top: 33px;
     border-right: none;
   }

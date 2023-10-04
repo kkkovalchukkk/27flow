@@ -2330,6 +2330,8 @@ section {
 .project-section__sidebar, .offers-section__sidebar, .result-section__sidebar {
   position: sticky;
   left: 0;
+  height: -moz-min-content;
+  height: min-content;
   top: 0;
   display: flex;
   flex-direction: column;
@@ -2339,7 +2341,6 @@ section {
   padding: 28px;
   padding-left: 0;
   z-index: 5;
-  border-right: 1.2px solid #d4d4d4;
 }
 .project-section__btn {
   width: 100%;
@@ -2347,7 +2348,13 @@ section {
 .project-section__mobile-btn, .result-section__mobile-btn, .offers-section__mobile-btn {
   display: none;
 }
+.project-section .grid-list {
+  border-left: 1.2px solid #d4d4d4;
+}
 @media (max-width: 1280px) {
+  .project-section .grid-list {
+    border-left: none;
+  }
   .project-section__sidebar, .offers-section__sidebar, .result-section__sidebar {
     border: none;
     border-bottom: 1.2px solid #d4d4d4;
@@ -2651,6 +2658,11 @@ section {
 }
 
 .offers-section__sidebar, .result-section__sidebar {
+  height: -moz-fit-content;
+  height: fit-content;
+  position: sticky;
+  left: 0;
+  top: 0;
   padding-top: 33px;
   border-right: none;
 }
