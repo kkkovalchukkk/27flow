@@ -1,0 +1,135 @@
+.project-section {
+  &__wrapper {
+  }
+
+  &__tab-list {
+    width: fit-content;
+    margin-left: 321px;
+    margin-bottom: 48px;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+    background-color: #fff;
+  }
+
+  &__page-list {
+  }
+
+  &__table {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - 16px));
+    gap: 16px;
+  }
+
+  &__table-cell {
+    position: relative;
+    width: 100%;
+    height: 411px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+    &:hover {
+      &::after {
+        opacity: 1;
+        visibility: visible;
+      }
+      .project-section__table-cell-heading,
+      .project-section__table-cell-text,
+      .project-section__table-cell-category-list {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      transition: $defaultTransitionTime;
+      opacity: 0;
+      visibility: hidden;
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 100%
+      );
+    }
+  }
+
+  &__table-cell-heading {
+    color: $white;
+    margin-bottom: 9px;
+    font-family: $mainFont;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    transition: $defaultTransitionTime;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &__table-cell-text {
+    max-width: 486px;
+    margin-bottom: 26.75px;
+    color: $white;
+    font-family: $mainFont;
+    font-size: 16.5px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 18.15px */
+    letter-spacing: -0.495px;
+    transition: $defaultTransitionTime;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &__table-cell-category-list {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: $defaultTransitionTime;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &__table-cell-category-list-link {
+    color: $black;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: $mainFont;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    text-transform: uppercase;
+    padding: 6px 9px;
+    border-radius: 75px;
+    background: $lt-grey;
+  }
+
+  &__table-cell-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -2;
+    object-fit: cover;
+    object-position: center;
+  }
+  &__more-btn {
+    max-width: 200px;
+    font-size: 15px;
+    letter-spacing: -0.3px;
+    margin: 0 auto;
+    margin-top: 48px;
+    margin-bottom: 2px;
+  }
+}

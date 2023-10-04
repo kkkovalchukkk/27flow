@@ -7,6 +7,12 @@
     padding-top: 67.5px;
     padding-bottom: 122px;
   }
+  &--projects {
+    .wrapper {
+      padding-top: 90px;
+      padding-bottom: 63px;
+    }
+  }
 
   @media (max-width: 1280px) {
     &__wrapper {
