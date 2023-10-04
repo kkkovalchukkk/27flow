@@ -1,0 +1,15 @@
+.tel-link {
+  color: $black;
+  font-family: $mainFont;
+  font-size: 16.5px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  &--white {
+    color: $white;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 24.2px */
+  }
+}

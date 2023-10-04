@@ -49,6 +49,7 @@
   &__icon {
     width: 18px;
     height: 18px;
+    transform: rotate(45deg);
     svg {
       width: 18px;
       height: 18px;
@@ -62,6 +63,17 @@
     color: $blue;
     path {
       stroke: $blue;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    &__icon {
+      width: 24px;
+      height: 24px;
+      svg {
+        width: 24px;
+        height: 24px;
+      }
     }
   }
 }

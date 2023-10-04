@@ -1,0 +1,6 @@
+.contacts-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 71px;
+  row-gap: 30px;
+}

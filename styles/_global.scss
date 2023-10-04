@@ -8,4 +8,7 @@ body {
 
 section {
   margin-bottom: 118px;
+  @media (max-width: 920px) {
+    margin-bottom: 100px;
+  }
 }

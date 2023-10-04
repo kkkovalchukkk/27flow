@@ -5,4 +5,12 @@
   justify-content: space-between;
   padding-bottom: 22.25px;
   border-bottom: 1.2px solid $lt-grey;
+  @media (max-width: 1280px) {
+    border-bottom: none;
+    padding: 0;
+    margin-bottom: 56px;
+  }
+  @media (max-width: 920px) {
+    margin-bottom: 48px;
+  }
 }

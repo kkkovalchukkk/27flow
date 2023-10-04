@@ -1,0 +1,19 @@
+.link {
+  display: flex;
+  align-items: center;
+  gap: 13.36px;
+  color: $blue;
+  font-family: $mainFont;
+  font-size: 16.5px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%; /* 18.15px */
+  &__icon {
+    width: 21px;
+    height: 16px;
+    svg {
+      width: 21px;
+      height: 16px;
+    }
+  }
+}

@@ -12,8 +12,6 @@
         leading-trim: both;
         text-edge: cap;
         font-family: $mainFont;
-        font-size: 15px;
-        font-style: normal;
         font-weight: 700;
         line-height: 100%;
         &::after {
@@ -28,7 +26,6 @@
       }
     }
   }
-
   &__item-btn {
     color: $d-grey;
     padding: 0;
@@ -64,5 +61,9 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: start;
+  }
+  @media (max-width: 1280px) {
+    &__item-btn {
+    }
   }
 }

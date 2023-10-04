@@ -1,0 +1,6 @@
+.mail-link {
+  @extend .tel-link;
+  &--white {
+    @extend .tel-link--white;
+  }
+}

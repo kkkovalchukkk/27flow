@@ -1,21 +1,37 @@
+// Utils
 @import './vars';
 @import './mixins';
 
+// Global
 @import './reset';
 @import './fonts';
 @import './global';
 
 // UI
-@import './UI/subheading';
 @import './UI/wrapper';
 @import './UI/logo';
 @import './UI/mainLink';
 @import './UI/header';
 @import './UI/tabList';
 @import './UI/btn';
-@import './UI/hgroup';
 @import './UI/footer';
 @import './UI/overlay';
 @import './UI/popup';
+@import './UI/link';
+@import './UI/telLink';
+@import './UI/mailLink';
+@import './UI/player';
 
+// Blocks
+@import './blocks/subheading';
+@import './blocks/slogan';
+@import './blocks/table';
+@import './blocks/offersList';
+@import './blocks/infoGroup';
+@import './blocks/form';
+@import './blocks/contactsGroup';
+@import './blocks/hgroup';
+@import './blocks/mobileMenu';
+
+// Styles
 @import './styles';

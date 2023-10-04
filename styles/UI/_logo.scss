@@ -5,4 +5,12 @@
     width: 54px;
     height: 42px;
   }
+  @media (max-width: 1280p) {
+    width: 72px;
+    height: 56px;
+    svg {
+      width: 72px;
+      height: 56px;
+    }
+  }
 }

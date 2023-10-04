@@ -179,12 +179,12 @@
   }
 
   &__menu {
+    display: none;
     position: relative;
     margin-bottom: 9px;
     cursor: pointer;
     transition: $defaultTransitionTime cubic-bezier(0.62, 0.21, 0.905, 0.36);
     overflow: hidden;
-    display: flex;
     align-items: center;
     gap: 10px;
     padding: 4px;
@@ -233,6 +233,49 @@
     cursor: pointer;
     path {
       transition: $defaultTransitionTime;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    padding-top: 33px;
+    &__logo-link {
+      gap: 16px;
+      margin-right: auto;
+    }
+    &__company-name {
+      // font-size: 20px;
+      // font-style: normal;
+      // font-weight: 400;
+      // line-height: 100%; /* 20px */
+      // letter-spacing: -0.4px;
+    }
+    &__main-link {
+      margin-right: 64px;
+    }
+    &__nav {
+      display: none;
+    }
+    &__menu {
+      display: flex;
+      // font-size: 20px;
+      // font-style: normal;
+      // font-weight: 400;
+      // line-height: 100%; /* 20px */
+      // letter-spacing: -0.4px;
+      gap: 12px;
+      svg {
+        // width: 23px;
+        // height: 12px;
+      }
+    }
+  }
+
+  @media (max-width: 920px) {
+    &__company-name {
+      display: none;
+    }
+    &__main-link {
+      margin-right: 40px;
     }
   }
 }
