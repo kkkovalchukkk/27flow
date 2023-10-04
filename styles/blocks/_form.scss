@@ -333,4 +333,12 @@
       width: fit-content;
     }
   }
+
+  @media (max-width: 525px) {
+    &__radio {
+      padding: 10px 20px;
+      font-size: 16px;
+      line-height: 110%;
+    }
+  }
 }

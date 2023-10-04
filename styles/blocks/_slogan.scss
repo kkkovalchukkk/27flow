@@ -15,4 +15,8 @@
     max-width: 676px;
     font-size: 32px;
   }
+  @media (max-width: 475px) {
+    font-size: 24px;
+    letter-spacing: -0.48px;
+  }
 }

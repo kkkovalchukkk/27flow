@@ -27,6 +27,12 @@
       padding-bottom: 80px;
     }
   }
+  @media (max-width: 475px) {
+    &__wrapper {
+      padding-bottom: 64px;
+      padding-top: 50px;
+    }
+  }
 }
 
 .project-section {
@@ -380,6 +386,18 @@
       background: $lt-grey;
     }
   }
+
+  @media (max-width: 475px) {
+    &__col-img {
+      height: 320px;
+    }
+    &__category {
+      padding: 8px 12px;
+      font-size: 12px;
+    }
+    &__col-footer {
+    }
+  }
 }
 
 .offers-section {
@@ -439,6 +457,15 @@
       max-width: unset;
       font-size: 16px;
       letter-spacing: -0.48px;
+    }
+  }
+  @media (max-width: 475px) {
+    &__main-link {
+      display: none;
+    }
+    &__slogan {
+      margin-top: 8px;
+      margin-bottom: 32px;
     }
   }
 }
@@ -515,6 +542,10 @@
       max-width: unset;
     }
   }
+  @media (max-width: 475px) {
+    padding-top: 72px;
+    padding-bottom: 52px;
+  }
 }
 
 .request-section {
@@ -581,7 +612,6 @@
   }
   @media (max-width: 675px) {
     &__wrapper {
-      
     }
     &__heading {
       max-width: 351px;

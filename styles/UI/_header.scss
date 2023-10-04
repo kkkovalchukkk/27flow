@@ -286,4 +286,13 @@
       margin-bottom: 10px;
     }
   }
+
+  @media (max-width: 475px) {
+    &__main-link {
+      margin-right: 24px;
+    }
+    &__menu-text {
+      display: none;
+    }
+  }
 }

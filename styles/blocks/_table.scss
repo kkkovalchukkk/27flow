@@ -115,4 +115,37 @@
       }
     }
   }
+  @media (max-width: 525px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    &__cell {
+      width: 100%;
+      max-width: unset;
+      padding: 0;
+      height: auto;
+      flex-direction: column-reverse;
+      padding-bottom: 24px;
+      gap: 24px;
+      border: none;
+      &:last-child {
+        border-top: none;
+        border: none;
+      }
+      &-text {
+        max-width: unset;
+        font-size: 16px;
+        line-height: 110%;
+      }
+      &-count {
+        font-size: 64px;
+        line-height: 100%; /* 64px */
+      }
+    }
+    .table__cell:nth-child(2),
+    .table__cell:nth-child(5),
+    .table__cell:nth-child(6) {
+      border-right: none;
+    }
+  }
 }
