@@ -138,4 +138,23 @@
       max-width: 225px;
     }
   }
+  @media (max-width: 525px) {
+    padding: 40px 24px;
+    max-width: 350px;
+    background-position: left -131px top -55px, right -246px bottom -46px,
+      left -160px bottom -18px, top 48px right 13px;
+    background-size: 552px 308px, 552px 308px, 552px 308px, 60px 32px;
+    .form__btn {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 100%; /* 14px */
+      letter-spacing: -0.28px;
+      text-transform: uppercase;
+    }
+  }
+  @media (max-width: 425px) {
+    background-position: left -131px top -55px, right -246px bottom -46px,
+      left -160px bottom -18px, top 27px right 11px;
+  }
 }
