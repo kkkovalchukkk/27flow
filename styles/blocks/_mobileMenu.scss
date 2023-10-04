@@ -103,4 +103,21 @@
     margin-top: 40px;
     margin-left: auto;
   }
+
+  @media (max-width: 675px) {
+    &__nav {
+      margin-top: 76px;
+    }
+    &__nav-list {
+      gap: 32px;
+    }
+    &__nav-list-item-link,
+    &__nav-list-item-submenu-link {
+      font-size: 24px;
+      letter-spacing: -0.48px;
+    }
+    &__nav-list-item-submenu.active {
+      padding: 24px;
+    }
+  }
 }

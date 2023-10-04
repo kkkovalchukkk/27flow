@@ -100,4 +100,19 @@
       max-width: 50%;
     }
   }
+
+  @media (max-width: 675px) {
+    &__cell {
+      padding: 23.5px;
+      height: 267px;
+      &-text {
+        font-size: 15.74px;
+        line-height: 110%;
+      }
+      &-count {
+        font-size: 68.684px;
+        line-height: 100%; /* 68.684px */
+      }
+    }
+  }
 }

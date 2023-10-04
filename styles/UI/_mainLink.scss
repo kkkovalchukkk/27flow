@@ -76,4 +76,21 @@
       }
     }
   }
+
+  @media (max-width: 675px) {
+    font-size: 14px;
+    letter-spacing: -0.28px;
+    gap: 12px;
+    &__icon {
+      width: 10px;
+      height: 10px;
+      svg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
 }

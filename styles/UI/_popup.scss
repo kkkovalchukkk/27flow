@@ -110,4 +110,32 @@
     background-position: left -103px top -33px, right -102px bottom 89px,
       left -57px bottom -18px, top 124px right 24px;
   }
+
+  @media (max-width: 675px) {
+    max-width: 440px;
+    padding-top: 52px;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-bottom: 40px;
+    background-position: left -131px top -55px, right -246px bottom -46px,
+      left -160px bottom -18px, top 62px right 37px;
+    background-size: 552px 308px, 552px 308px, 552px 308px, 60px 32px;
+    &__heading {
+      font-size: 20px;
+      margin-bottom: 24px;
+      span {
+        &::after {
+          width: 70px;
+          height: 30px;
+          left: -7px;
+          top: -1px;
+        }
+      }
+    }
+    .form__subtext {
+      font-size: 12px;
+      line-height: 110%;
+      max-width: 225px;
+    }
+  }
 }

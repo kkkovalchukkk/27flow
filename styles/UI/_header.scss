@@ -278,4 +278,12 @@
       margin-right: 40px;
     }
   }
+
+  @media (max-width: 675px) {
+    padding-top: 23px;
+    &__main-link,
+    &__menu {
+      margin-bottom: 10px;
+    }
+  }
 }
