@@ -2299,7 +2299,6 @@ section {
   grid-template-columns: 25.5% 73.7%;
 }
 .project-section__sidebar, .offers-section__sidebar, .result-section__sidebar {
-  height: 100%;
   position: sticky;
   left: 0;
   top: 0;
