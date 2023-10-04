@@ -1118,6 +1118,7 @@ section {
   }
   .footer__mobile-col {
     padding-right: 34px;
+    gap: 16px;
   }
   .footer__mobile-tel-link.tel-link, .footer__mobile-tel-link.mail-link, .footer__mobile-mail-link.mail-link {
     font-size: 16px;
@@ -1132,7 +1133,9 @@ section {
   }
   .footer__mobile-group {
     grid-template-columns: 141px 160px;
-    gap: 32px;
+    row-gap: 32px;
+    -moz-column-gap: 16px;
+         column-gap: 16px;
     padding-right: 0;
   }
   .footer__mobile-group-item-heading {
@@ -1166,6 +1169,20 @@ section {
   .footer__link-icon svg {
     width: 17px;
     height: 17px;
+  }
+}
+@media (max-width: 374px) {
+  .footer__mobile-col {
+    padding: 0;
+  }
+  .footer__mobile-group {
+    grid-template-columns: 141px 128px;
+  }
+  .footer__mobile-col {
+    flex-direction: column;
+  }
+  .footer__mobile-col-item:last-child {
+    margin-left: auto;
   }
 }
 
@@ -2211,6 +2228,27 @@ section {
   }
   .mobile-menu__nav-list-item-submenu.active {
     padding: 24px;
+  }
+}
+@media (max-width: 475px) {
+  .mobile-menu__btn {
+    padding: 16px;
+    font-size: 20px;
+    letter-spacing: -0.4px;
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: unset;
+  }
+  .mobile-menu__btn .btn__icon {
+    width: 12px;
+    height: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mobile-menu__btn .btn__icon svg {
+    width: 12px;
+    height: 12px;
   }
 }
 

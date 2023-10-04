@@ -120,4 +120,24 @@
       padding: 24px;
     }
   }
+  @media (max-width: 475px) {
+    &__btn {
+      padding: 16px;
+      font-size: 20px;
+      letter-spacing: -0.4px;
+      width: fit-content;
+      max-width: unset;
+      .btn__icon {
+        width: 12px;
+        height: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+  }
 }
