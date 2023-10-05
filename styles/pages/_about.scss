@@ -3,12 +3,12 @@
   }
 
   &__content {
-    @extend .project-section__content;
+    @extend .projects-section__content;
     border-top: 0.9px $lt-grey solid;
   }
 
   &__sidebar {
-    @extend .project-section__sidebar;
+    @extend .projects-section__sidebar;
   }
 
   &__grid {
