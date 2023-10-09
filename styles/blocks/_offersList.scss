@@ -34,7 +34,7 @@
     justify-content: space-between;
     &:hover {
       .offers-list__item-link {
-        transform: rotate(0deg);
+        transform: rotate(45deg);
       }
     }
   }
@@ -52,7 +52,7 @@
     letter-spacing: -0.27px;
   }
   &__item-link {
-    transform: rotate(45deg);
+    transform: rotate(0deg);
     transition: $defaultTransitionTime;
 
     svg {

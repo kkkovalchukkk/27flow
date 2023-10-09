@@ -1667,7 +1667,7 @@ section {
   justify-content: space-between;
 }
 .offers-list__item-header:hover .offers-list__item-link {
-  transform: rotate(0deg);
+  transform: rotate(45deg);
 }
 .offers-list__item-heading {
   max-width: 294px;
@@ -1682,7 +1682,7 @@ section {
   letter-spacing: -0.27px;
 }
 .offers-list__item-link {
-  transform: rotate(45deg);
+  transform: rotate(0deg);
   transition: 0.23s;
 }
 .offers-list__item-link svg {
