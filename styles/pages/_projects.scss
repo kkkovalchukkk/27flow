@@ -243,6 +243,8 @@
   @media (max-width: 768px) {
     &__tab-list {
       padding: 40px 0px;
+      border-top: 1.2px solid $lt-grey;
+      margin-top: 40px;
     }
     &__table-cell-img {
       max-width: 352px;
@@ -283,8 +285,8 @@
 
   @media (max-width: 768px) {
     .wrapper {
-      padding-bottom: 40px;
-      border-bottom: 1.2px solid $lt-grey;
+      // padding-bottom: 40px;
+      // border-bottom: 1.2px solid $lt-grey;
     }
   }
 }

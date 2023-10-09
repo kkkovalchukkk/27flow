@@ -15,41 +15,42 @@
   transition: $defaultTransitionTime cubic-bezier(0.62, 0.21, 0.905, 0.36);
   overflow: hidden;
   padding: 4px;
-  &::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 300px;
-    height: 300px;
-    background-color: $blue;
-    border-radius: 50%;
-    aspect-ratio: 1 / 1;
-    z-index: -1;
-    transform: scale(0);
-    transition: $defaultTransitionTime cubic-bezier(0.62, 0.21, 0.905, 0.36);
-  }
+  // &::after {
+  //   content: '';
+  //   position: absolute;
+  //   left: 0;
+  //   right: 0;
+  //   margin: 0 auto;
+  //   width: 300px;
+  //   height: 300px;
+  //   background-color: $blue;
+  //   border-radius: 50%;
+  //   aspect-ratio: 1 / 1;
+  //   z-index: -1;
+  //   transform: scale(0);
+  //   transition: $defaultTransitionTime cubic-bezier(0.62, 0.21, 0.905, 0.36);
+  // }
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-position: under;
   &:hover {
-    color: $white;
+    // color: $white;
+    text-decoration-color: $black;
     .main-link__icon {
-      transform: scale(1.3);
-      path {
-        stroke: $white;
-      }
+      transform: rotate(45deg);
     }
   }
 
   &:active {
     transform: scale(0.95);
   }
-  &:hover::after {
-    transform: scale(100%);
-  }
+  // &:hover::after {
+  //   transform: scale(100%);
+  // }
   &__icon {
     width: 18px;
     height: 18px;
-    transform: rotate(45deg);
+    transform: rotate(0deg);
     svg {
       width: 18px;
       height: 18px;
@@ -63,6 +64,9 @@
     color: $blue;
     path {
       stroke: $blue;
+    }
+    &:hover {
+      text-decoration-color: $blue;
     }
   }
 
@@ -82,14 +86,14 @@
     letter-spacing: -0.28px;
     gap: 12px;
     &__icon {
-      width: 10px;
-      height: 10px;
+      width: 18px;
+      height: 18px;
       svg {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 10px;
-        height: 10px;
+        width: 18px;
+        height: 18px;
       }
     }
   }
