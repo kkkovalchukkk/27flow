@@ -25,6 +25,7 @@
   }
 
   &__text {
+    max-width: 605px;
     color: $black;
     font-family: $mainFont;
     font-size: 18px;
@@ -456,6 +457,7 @@
     &__heading {
       font-size: 48px;
       margin-bottom: 16px;
+      font-weight: bold;
     }
     &__text {
       max-width: 807px;
